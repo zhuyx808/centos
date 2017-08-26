@@ -3,7 +3,7 @@
 #
 
 # Build:
-# docker build -t zhuyx808/centos:latest .
+# docker build -t="zhuyx808/centos:latest" github.com/zhuyx808/centos
 
 # Create:
 # docker create -it --name centos -h centos zhuyx808/centos
@@ -18,7 +18,7 @@
 FROM centos:latest
 
 # Maintener
-MAINTAINER Hongliang Zhu <zhuyx808@gmail.com>
+MAINTAINER Hongliang Zhu <zhuyx808@163.com>
 
 # Update CentOS 7
 RUN yum update -y && yum upgrade -y
