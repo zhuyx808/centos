@@ -1,0 +1,11 @@
+sudo: required
+
+env:
+  global:
+    - DOCKER_VERSION=1.12.6 
+
+services:
+  - docker
+
+script:
+  - docker build -t="zhuyx808/centos:latest" github.com/zhuyx808/centos
